@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Customer Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-section">
+            <img src="image.png" alt="Image Description">
+        </div>
+        <div class="right-section">
+            <h1>Gym Customer Management</h1>
+            <form id="customer-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+                
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" required><br>
+                
+                <label for="membership">Membership:</label>
+                <select id="membership" required>
+                    <option value="basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="VIP">VIP</option>
+                </select><br>
+                
+                <button type="submit">Add Customer</button>
+            </form>
+    
+            <ul id="customer-list">
+                <!-- Customer items will be added dynamically here -->
+                <!-- Example: <li><strong>John Doe</strong> - 123456789 (Basic)</li> -->
+            </ul>
+            <button id="delete-btn">Delete Selected</button>
+        </div>
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
